@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background: #F5F6F7;
+}
+
+#admins p{
+	display: table-row;
+}
+#admins{
+	margin:200px;
+	text-align:center;
+}
+#menu{
+	width:20%;
+	float:left;
+	height:100%;
+	border-right:dashed 1px #CCCCCC;
+}
+#content{
+	width: 79%;
+	float:right;
+	height:100%;
+}
+input, textarea{
+	width:100%;
+	padding:10px 0px;
+}
+textarea{
+	height:300px;
+}
+input[type="submit"]{
+	width:auto !important;
+	padding:10px 10px !important;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Galleria Classic Theme</title>
+        <style>
+
+            /* Demo styles */
+            html,body{background:#222;margin:0;}
+            body{border-top:4px solid #000;}
+            .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:620px;margin:20px auto;}
+            h1{font-size:12px;font-weight:normal;color:#ddd;margin:0;}
+            p{margin:0 0 20px}
+            a {color:#22BCB9;text-decoration:none;}
+            .cred{margin-top:20px;font-size:11px;}
+
+            /* This rule is read by Galleria to define the gallery height: */
+            #galleria{height:320px}
+
+        </style>
+
+        <!-- load jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+        <!-- load Galleria -->
+        <script src="../../galleria-1.2.9.min.js"></script>
+
+    </head>
+<body>
+    <div class="content">
+        <h1>Galleria Classic Theme</h1>
+        <p>Demonstrating a basic gallery example.</p>
+
+        <!-- Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary -->
+
+        <div id="galleria">
+            <a href="../../../images/a.jpg">
+                <img 
+                    src="../../../images/a.jpg",
+                    data-big="../../../images/a.jpg"
+                    data-title="Biandintz eta zaldiak"
+                    data-description="Horses on Bianditz mountain, in Navarre, Spain."
+                >
+            </a>
+            <a href="../../../images/b.jpg">
+                <img 
+                    src="../../../images/b.jpg",
+                    data-big="../../../images/b.jpg"
+                    data-title="Athabasca Rail"
+                    data-description="The Athabasca River railroad track at the mouth of Brulé Lake in Alberta, Canada."
+                >
+            </a>
+            <a href="../../../images/c.jpg">
+                <img 
+                    src="../../../images/c.jpg",
+                    data-big="../../../images/c.jpg"
+                    data-title="Back-scattering crepuscular rays"
+                    data-description="Picture of the day on Wikimedia Commons 26 September 2010."
+                >
+            </a>
+        </div>
+
+        <p class="cred">Made by <a href="http://galleria.aino.se">Galleria</a>.</p>
+    </div>
+
+    <script>
+
+    // Load the classic theme
+    Galleria.loadTheme('galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria');
+
+    </script>
+    </body>
+</html>

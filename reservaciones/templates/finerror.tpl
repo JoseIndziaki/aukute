@@ -1,0 +1,1 @@
+<div>No se pudo procesar la reserva Intente más tarde.</div>
